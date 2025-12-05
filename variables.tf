@@ -62,3 +62,9 @@ variable "ami_type" {
 variable "bastion_public_key_path" {
   type = string
 }
+
+variable "container_image" {
+  description = "Container image to use for the web container (including tag)"
+  type        = string
+  default     = "nohaalmetwally/doctor-appointment-app:latest"
+}

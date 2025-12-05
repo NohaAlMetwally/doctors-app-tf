@@ -24,7 +24,7 @@ resource "aws_route_table_association" "public2" {
 
 resource "aws_route_table" "private_az1" {
   vpc_id = aws_vpc.doctors_app_vpc.id
-  tags = { Name = "private-rt-az1" }
+  tags   = { Name = "private-rt-az1" }
 }
 
 resource "aws_route" "private_route_az1" {
@@ -35,7 +35,7 @@ resource "aws_route" "private_route_az1" {
 
 resource "aws_route_table" "private_az2" {
   vpc_id = aws_vpc.doctors_app_vpc.id
-  tags = { Name = "private-rt-az2" }
+  tags   = { Name = "private-rt-az2" }
 }
 
 resource "aws_route" "private_route_az2" {

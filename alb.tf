@@ -19,11 +19,14 @@ resource "aws_lb_target_group" "tg" {
   vpc_id      = aws_vpc.doctors_app_vpc.id
   target_type = "ip"
 
+  deregistration_delay = 30
+
   health_check {
     path                = "/"
     matcher             = "200-399"
-    interval            = 30
-    unhealthy_threshold = 3
+    interval            = 10
+    timeout             = 4     
+    unhealthy_threshold = 2
     healthy_threshold   = 2
   }
 }

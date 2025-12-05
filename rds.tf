@@ -22,12 +22,12 @@ resource "aws_db_instance" "mariadb" {
   password               = local.db_creds.db_password
   db_subnet_group_name   = aws_db_subnet_group.rds_subnets.name
   vpc_security_group_ids = [aws_security_group.database_security_group.id]
-   # enable standby (Multi-AZ)
-  multi_az               = true
-  publicly_accessible    = false
-  skip_final_snapshot    = true
-  deletion_protection    = false
-  apply_immediately      = true
+  # enable standby (Multi-AZ)
+  multi_az            = true
+  publicly_accessible = false
+  skip_final_snapshot = true
+  deletion_protection = false
+  apply_immediately   = true
 
   tags = {
     Name = "doctors-app-mariadb"

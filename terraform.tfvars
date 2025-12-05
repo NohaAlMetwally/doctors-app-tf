@@ -11,7 +11,5 @@ private_data_subnet_az2_cidr = "10.0.6.0/24"
 ami_type                     = "ami-0ecb62995f68bb549"
 instance_type                = "t3.micro"
 db_name                      = "edoc"
-#db_username                  = "user"
-#db_password                  = "password"
 bastion_public_key_path = "keys/edoc_bastion.pub"
 

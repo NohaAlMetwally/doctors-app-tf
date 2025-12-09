@@ -102,14 +102,27 @@ mysql -h <rds-endpoint> -u user -p -e "SHOW TABLES;" edoc
 
 ```
 root
-├── main.tf
-├── vpc/
-├── ecs/
-├── rds/
+├── alb.tf
+├── architecture.jpeg
+├── asg-ecs.tf
+├── backend.tf
+├── bastion.tf
+├── ecs.tf
+├── edoc.sql
+├── iam-role.tf
+├── igw.tf
+├── nat_gw.tf
 ├── outputs.tf
+├── provider.tf
+├── rds.tf
+├── route_tables.tf
+├── secrets.tf
+├── sg.tf
+├── subnet.tf
+├── terraform.tfvars
+├── tfplan
 ├── variables.tf
-├── keys/        # Place SSH key here
-└── README.md
+└── vpc.tf
 ```
 
 ---

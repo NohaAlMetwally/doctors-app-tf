@@ -116,7 +116,6 @@ root
 
 ## 📝 Notes
 
-* Make sure your IP is allowed in the Bastion security group.
 * ECS tasks run in private subnets and do **not** have public IPs.
 * RDS is fully private and only reachable through the Bastion.
 

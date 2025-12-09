@@ -87,13 +87,13 @@ scp -i ~/.ssh/edoc_bastion ./edoc.sql ubuntu@<BASTION_PUBLIC_IP>:/home/ubuntu/ed
 From inside the Bastion host:
 
 ```bash
-mysql -h <rds-endpoint> -u user -p edoc < /home/ubuntu/edoc.sql
+mysql -h <rds-endpoint> -u <db-username> -p edoc < /home/ubuntu/edoc.sql
 ```
 
 Check that tables exist:
 
 ```bash
-mysql -h <rds-endpoint> -u user -p -e "SHOW TABLES;" edoc
+mysql -h <rds-endpoint> -u <db-username> -p -e "SHOW TABLES;" edoc
 ```
 
 ---

@@ -21,13 +21,7 @@ The Terraform code in this repository deploys the following infrastructure:
 
 ### Architecture Diagram
 
-Add this image to your repo root as `architecture.jpeg` and Markdown will display it:
-
-```md
-<img src="architecture.jpeg" />
-```
-
----
+![Architecture Diagram](architecture.jpeg)
 
 ## 🛠️ Prerequisites
 
